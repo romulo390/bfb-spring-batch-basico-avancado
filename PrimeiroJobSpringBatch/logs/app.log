@@ -1250,3 +1250,666 @@ Caused by: org.springframework.batch.item.file.transform.IncorrectLineLengthExce
 2024-11-26 16:49:23,428 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jobLeitorArquivoDelimitado]] completed with the following parameters: [{jobLeitorArquivoDelimitado  arquivoClientes=file:files/clientes.txt, run.id=7, arquivoClientes=file:files/clientes.txt, jobLeitorArquivoDelimitado,  arquivoClientes=file:files/clientes.txt}] and the following status: [COMPLETED] in 215ms
 2024-11-26 16:49:23,433 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
 2024-11-26 16:49:23,448 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2024-11-28 16:09:16,660 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 20656 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 16:09:16,666 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 16:09:17,447 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 16:09:17,866 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderJob' defined in class path resource [com/udemy/primeiroprojetospringbatch/job/JdbcCursorReaderJobConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderJob' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderStep' defined in class path resource [com/udemy/primeiroprojetospringbatch/step/JdbcCursorReaderStepConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderStep' parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.batch.item.ItemReader<com.udemy.primeiroprojetospringbatch.dominio.Cliente>' available: expected single matching bean but found 3: leituraArquivoDelimitadoReader,jdbcCursorItemReader,leituraArquivoLarguraFixaReader
+2024-11-28 16:11:44,783 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 22608 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 16:11:44,788 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 16:11:45,596 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 16:11:45,933 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderJob' defined in class path resource [com/udemy/primeiroprojetospringbatch/job/JdbcCursorReaderJobConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderJob' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderStep' defined in class path resource [com/udemy/primeiroprojetospringbatch/step/JdbcCursorReaderStepConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderStep' parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.batch.item.ItemReader<com.udemy.primeiroprojetospringbatch.dominio.Cliente>' available: expected single matching bean but found 3: leituraArquivoDelimitadoReader,jdbcCursorItemReader,leituraArquivoLarguraFixaReader
+2024-11-28 16:15:05,655 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 10344 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 16:15:05,661 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 16:15:06,285 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 16:15:06,648 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderJob' defined in class path resource [com/udemy/primeiroprojetospringbatch/job/JdbcCursorReaderJobConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderJob' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderStep' defined in class path resource [com/udemy/primeiroprojetospringbatch/step/JdbcCursorReaderStepConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderStep' parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.batch.item.ItemReader<com.udemy.primeiroprojetospringbatch.dominio.Cliente>' available: expected single matching bean but found 3: leituraArquivoDelimitadoReader,jdbcCursorItemReader,leituraArquivoLarguraFixaReader
+2024-11-28 16:15:28,904 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 15892 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 16:15:28,909 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 16:15:29,575 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 16:15:29,931 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderJob' defined in class path resource [com/udemy/primeiroprojetospringbatch/job/JdbcCursorReaderJobConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderJob' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderStep' defined in class path resource [com/udemy/primeiroprojetospringbatch/step/JdbcCursorReaderStepConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderStep' parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.batch.item.ItemReader<com.udemy.primeiroprojetospringbatch.dominio.Cliente>' available: expected single matching bean but found 3: leituraArquivoDelimitadoReader,jdbcCursorItemReader,leituraArquivoLarguraFixaReader
+2024-11-28 16:16:16,724 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 12164 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 16:16:16,729 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 16:16:17,389 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 16:16:17,734 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderJob' defined in class path resource [com/udemy/primeiroprojetospringbatch/job/JdbcCursorReaderJobConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderJob' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderStep' defined in class path resource [com/udemy/primeiroprojetospringbatch/step/JdbcCursorReaderStepConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderStep' parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.batch.item.ItemReader<com.udemy.primeiroprojetospringbatch.dominio.Cliente>' available: expected single matching bean but found 3: leituraArquivoDelimitadoReader,jdbcCursorItemReader,leituraArquivoLarguraFixaReader
+2024-11-28 16:18:13,547 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 21848 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 16:18:13,553 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 16:18:14,257 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 16:18:14,705 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcCursorReaderJob' defined in class path resource [com/udemy/primeiroprojetospringbatch/job/JdbcCursorReaderJobConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.batch.core.Job]: Factory method 'jdbcCursorReaderJob' threw exception; nested exception is java.lang.NullPointerException
+2024-11-28 16:20:59,860 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 13168 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 16:20:59,867 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 16:21:00,530 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 16:21:00,925 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 16:21:02,272 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 16:21:02,323 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2024-11-28 16:21:02,608 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-28 16:21:02,694 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Started PrimeiroJobSpringBatchApplication in 3.616 seconds (JVM running for 5.512)
+2024-11-28 16:21:02,876 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] launched with the following parameters: [{run.id=31}]
+2024-11-28 16:21:02,958 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcCursorReaderStep]
+2024-11-28 16:21:02,969 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2024-11-28 16:21:02,989 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2024-11-28 16:21:03,062 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcCursorReaderStep] executed in 103ms
+2024-11-28 16:21:03,081 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] completed with the following parameters: [{run.id=31}] and the following status: [COMPLETED] in 156ms
+2024-11-28 16:21:03,088 WARN o.s.b.f.s.DisposableBeanAdapter [SpringContextShutdownHook] Destroy method 'close' on bean with name 'jdbcCursorItemReader' threw an exception: org.springframework.batch.item.ItemStreamException: Error while closing item reader
+2024-11-28 16:21:03,088 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-2 - Shutdown initiated...
+2024-11-28 16:21:03,152 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-2 - Shutdown completed.
+2024-11-28 16:21:03,163 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-11-28 16:21:03,202 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2024-11-28 16:32:03,266 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 7808 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 16:32:03,276 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 16:32:03,843 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 16:32:04,212 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 16:32:05,116 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 16:32:05,156 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2024-11-28 16:32:05,396 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-28 16:32:05,468 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Started PrimeiroJobSpringBatchApplication in 2.891 seconds (JVM running for 4.743)
+2024-11-28 16:32:05,476 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-11-28 16:32:05,579 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2024-11-28 16:33:50,180 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 16748 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 16:33:50,184 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 16:33:50,893 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 16:33:51,287 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 16:33:52,814 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 16:33:52,879 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2024-11-28 16:33:53,181 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-28 16:33:53,255 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Started PrimeiroJobSpringBatchApplication in 3.67 seconds (JVM running for 6.448)
+2024-11-28 16:33:53,385 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] launched with the following parameters: [{run.id=32}]
+2024-11-28 16:33:53,485 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcCursorReaderStep]
+2024-11-28 16:33:53,502 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Starting...
+2024-11-28 16:33:53,542 INFO c.z.h.HikariDataSource [main] HikariPool-2 - Start completed.
+2024-11-28 16:33:53,660 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcCursorReaderStep] executed in 173ms
+2024-11-28 16:33:53,686 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] completed with the following parameters: [{run.id=32}] and the following status: [COMPLETED] in 246ms
+2024-11-28 16:33:53,693 WARN o.s.b.f.s.DisposableBeanAdapter [SpringContextShutdownHook] Destroy method 'close' on bean with name 'jdbcCursorItemReader' threw an exception: org.springframework.batch.item.ItemStreamException: Error while closing item reader
+2024-11-28 16:33:53,696 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-2 - Shutdown initiated...
+2024-11-28 16:33:53,722 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-2 - Shutdown completed.
+2024-11-28 16:33:53,749 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-11-28 16:33:53,784 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2024-11-28 18:37:46,261 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 2500 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 18:37:46,266 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 18:37:47,640 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 18:37:48,178 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderJob' defined in class path resource [com/udemy/primeiroprojetospringbatch/job/JdbcCursorReaderJobConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderJob' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderStep' defined in class path resource [com/udemy/primeiroprojetospringbatch/step/JdbcCursorReaderStepConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderStep' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.batch.item.ItemReader<com.udemy.primeiroprojetospringbatch.dominio.Cliente>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Qualifier(value=readerJdbcCursor)}
+2024-11-28 18:43:29,701 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 22364 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 18:43:29,707 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 18:43:30,364 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 18:43:30,736 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 18:43:32,371 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 18:43:32,463 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2024-11-28 18:43:32,691 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-28 18:43:32,756 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Started PrimeiroJobSpringBatchApplication in 3.698 seconds (JVM running for 5.473)
+2024-11-28 18:43:32,894 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] launched with the following parameters: [{run.id=33}]
+2024-11-28 18:43:32,965 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcCursorReaderStep]
+2024-11-28 18:43:32,977 ERROR o.s.b.c.s.AbstractStep [main] Encountered an error executing step jdbcCursorReaderStep in job jdbcCursorReaderJob
+java.lang.IllegalArgumentException: Unable to invoke method: [public java.util.List com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes()] on object: [com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig@48bfb884] with arguments: [[StepExecution: id=192, version=1, name=jdbcCursorReaderStep, status=STARTED, exitStatus=EXECUTING, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=0, exitDescription=]]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:112) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.listener.MethodInvokerMethodInterceptor.invoke(MethodInvokerMethodInterceptor.java:69) ~[spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.sun.proxy.$Proxy69.beforeStep(Unknown Source) ~[?:?]
+	at org.springframework.batch.core.listener.CompositeStepExecutionListener.beforeStep(CompositeStepExecutionListener.java:79) ~[spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:204) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:410) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:136) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:319) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:147) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) [spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:127) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.sun.proxy.$Proxy63.run(Unknown Source) [?:?]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:192) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:166) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:153) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:148) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.udemy.primeiroprojetospringbatch.PrimeiroJobSpringBatchApplication.main(PrimeiroJobSpringBatchApplication.java:27) [classes/:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+Caused by: java.lang.NullPointerException
+	at com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes(JdbcCursorReaderConfig.java:39) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+2024-11-28 18:43:32,993 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcCursorReaderStep] executed in 27ms
+2024-11-28 18:43:33,019 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] completed with the following parameters: [{run.id=33}] and the following status: [FAILED] in 77ms
+2024-11-28 18:43:33,024 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-11-28 18:43:33,052 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2024-11-28 18:46:16,863 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 25360 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 18:46:16,867 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 18:46:17,548 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 18:46:18,049 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 18:46:19,008 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 18:46:19,074 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2024-11-28 18:46:19,273 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-28 18:46:19,346 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Started PrimeiroJobSpringBatchApplication in 3.124 seconds (JVM running for 5.051)
+2024-11-28 18:46:19,474 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] launched with the following parameters: [{run.id=34}]
+2024-11-28 18:46:19,595 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcCursorReaderStep]
+2024-11-28 18:46:19,613 ERROR o.s.b.c.s.AbstractStep [main] Encountered an error executing step jdbcCursorReaderStep in job jdbcCursorReaderJob
+java.lang.IllegalArgumentException: Unable to invoke method: [public java.util.List com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes()] on object: [com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig@c3fa05a] with arguments: [[StepExecution: id=193, version=1, name=jdbcCursorReaderStep, status=STARTED, exitStatus=EXECUTING, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=0, exitDescription=]]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:112) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.listener.MethodInvokerMethodInterceptor.invoke(MethodInvokerMethodInterceptor.java:69) ~[spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.sun.proxy.$Proxy69.beforeStep(Unknown Source) ~[?:?]
+	at org.springframework.batch.core.listener.CompositeStepExecutionListener.beforeStep(CompositeStepExecutionListener.java:79) ~[spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:204) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:410) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:136) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:319) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:147) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) [spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:127) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.sun.proxy.$Proxy63.run(Unknown Source) [?:?]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:192) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:166) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:153) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:148) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.udemy.primeiroprojetospringbatch.PrimeiroJobSpringBatchApplication.main(PrimeiroJobSpringBatchApplication.java:27) [classes/:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+Caused by: java.lang.NullPointerException
+	at com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes(JdbcCursorReaderConfig.java:41) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+2024-11-28 18:46:19,640 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcCursorReaderStep] executed in 44ms
+2024-11-28 18:46:19,670 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] completed with the following parameters: [{run.id=34}] and the following status: [FAILED] in 129ms
+2024-11-28 18:46:19,678 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-11-28 18:46:19,744 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2024-11-28 18:50:31,243 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 24068 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 18:50:31,247 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 18:50:32,034 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 18:50:32,428 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 18:50:33,387 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 18:50:33,438 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2024-11-28 18:50:33,626 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-28 18:50:33,709 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Started PrimeiroJobSpringBatchApplication in 3.065 seconds (JVM running for 5.04)
+2024-11-28 18:50:33,819 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] launched with the following parameters: [{run.id=35}]
+2024-11-28 18:50:33,879 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcCursorReaderStep]
+2024-11-28 18:50:33,895 ERROR o.s.b.c.s.AbstractStep [main] Encountered an error executing step jdbcCursorReaderStep in job jdbcCursorReaderJob
+java.lang.IllegalArgumentException: Unable to invoke method: [public java.util.List com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes()] on object: [com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig@4a699efa] with arguments: [[StepExecution: id=194, version=1, name=jdbcCursorReaderStep, status=STARTED, exitStatus=EXECUTING, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=0, exitDescription=]]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:112) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.listener.MethodInvokerMethodInterceptor.invoke(MethodInvokerMethodInterceptor.java:69) ~[spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.sun.proxy.$Proxy69.beforeStep(Unknown Source) ~[?:?]
+	at org.springframework.batch.core.listener.CompositeStepExecutionListener.beforeStep(CompositeStepExecutionListener.java:79) ~[spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:204) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:410) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:136) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:319) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:147) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) [spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:127) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.sun.proxy.$Proxy63.run(Unknown Source) [?:?]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:192) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:166) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:153) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:148) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.udemy.primeiroprojetospringbatch.PrimeiroJobSpringBatchApplication.main(PrimeiroJobSpringBatchApplication.java:27) [classes/:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+Caused by: java.lang.NullPointerException
+	at com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes(JdbcCursorReaderConfig.java:41) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+2024-11-28 18:50:33,914 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcCursorReaderStep] executed in 35ms
+2024-11-28 18:50:33,941 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] completed with the following parameters: [{run.id=35}] and the following status: [FAILED] in 90ms
+2024-11-28 18:50:33,948 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-11-28 18:50:33,986 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2024-11-28 18:54:58,628 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 18332 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 18:54:58,637 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 18:54:59,590 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 18:55:00,157 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 18:55:01,178 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 18:55:01,257 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2024-11-28 18:55:01,450 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-28 18:55:01,518 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Started PrimeiroJobSpringBatchApplication in 3.594 seconds (JVM running for 5.357)
+2024-11-28 18:55:01,636 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] launched with the following parameters: [{run.id=36}]
+2024-11-28 18:55:01,717 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcCursorReaderStep]
+2024-11-28 18:55:01,736 ERROR o.s.b.c.s.AbstractStep [main] Encountered an error executing step jdbcCursorReaderStep in job jdbcCursorReaderJob
+java.lang.IllegalArgumentException: Unable to invoke method: [public void com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes()] on object: [com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig@a567e72] with arguments: [[StepExecution: id=195, version=1, name=jdbcCursorReaderStep, status=STARTED, exitStatus=EXECUTING, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=0, exitDescription=]]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:112) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.listener.MethodInvokerMethodInterceptor.invoke(MethodInvokerMethodInterceptor.java:69) ~[spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.sun.proxy.$Proxy69.beforeStep(Unknown Source) ~[?:?]
+	at org.springframework.batch.core.listener.CompositeStepExecutionListener.beforeStep(CompositeStepExecutionListener.java:79) ~[spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:204) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:410) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:136) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:319) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:147) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) [spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:127) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.sun.proxy.$Proxy63.run(Unknown Source) [?:?]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:192) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:166) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:153) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:148) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.udemy.primeiroprojetospringbatch.PrimeiroJobSpringBatchApplication.main(PrimeiroJobSpringBatchApplication.java:27) [classes/:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+Caused by: java.lang.NullPointerException
+	at com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes(JdbcCursorReaderConfig.java:41) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+2024-11-28 18:55:01,762 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcCursorReaderStep] executed in 43ms
+2024-11-28 18:55:01,801 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] completed with the following parameters: [{run.id=36}] and the following status: [FAILED] in 122ms
+2024-11-28 18:55:01,809 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-11-28 18:55:01,882 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2024-11-28 18:56:29,431 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 23324 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 18:56:29,443 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 18:56:30,301 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 18:56:30,741 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 18:56:31,874 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 18:56:31,956 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2024-11-28 18:56:32,145 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-28 18:56:32,212 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Started PrimeiroJobSpringBatchApplication in 3.487 seconds (JVM running for 5.725)
+2024-11-28 18:56:32,341 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] launched with the following parameters: [{run.id=37}]
+2024-11-28 18:56:32,404 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcCursorReaderStep]
+2024-11-28 18:56:32,420 ERROR o.s.b.c.s.AbstractStep [main] Encountered an error executing step jdbcCursorReaderStep in job jdbcCursorReaderJob
+java.lang.IllegalArgumentException: Unable to invoke method: [public void com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes()] on object: [com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig@6bcbf05b] with arguments: [[StepExecution: id=196, version=1, name=jdbcCursorReaderStep, status=STARTED, exitStatus=EXECUTING, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=0, exitDescription=]]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:112) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.listener.MethodInvokerMethodInterceptor.invoke(MethodInvokerMethodInterceptor.java:69) ~[spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.sun.proxy.$Proxy69.beforeStep(Unknown Source) ~[?:?]
+	at org.springframework.batch.core.listener.CompositeStepExecutionListener.beforeStep(CompositeStepExecutionListener.java:79) ~[spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:204) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:410) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:136) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:319) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:147) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) [spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:127) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.sun.proxy.$Proxy63.run(Unknown Source) [?:?]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:192) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:166) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:153) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:148) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.udemy.primeiroprojetospringbatch.PrimeiroJobSpringBatchApplication.main(PrimeiroJobSpringBatchApplication.java:27) [classes/:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+Caused by: java.lang.NullPointerException
+	at com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes(JdbcCursorReaderConfig.java:40) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+2024-11-28 18:56:32,439 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcCursorReaderStep] executed in 34ms
+2024-11-28 18:56:32,471 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] completed with the following parameters: [{run.id=37}] and the following status: [FAILED] in 93ms
+2024-11-28 18:56:32,479 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-11-28 18:56:32,518 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2024-11-28 19:01:04,764 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 25220 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 19:01:04,769 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 19:01:05,523 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 19:01:05,787 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 19:01:06,662 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 19:01:06,904 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderJob' defined in class path resource [com/udemy/primeiroprojetospringbatch/job/JdbcCursorReaderJobConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderJob' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcCursorReaderStep' defined in class path resource [com/udemy/primeiroprojetospringbatch/step/JdbcCursorReaderStepConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.batch.core.Step]: Factory method 'jdbcCursorReaderStep' threw exception; nested exception is java.lang.IllegalArgumentException: DataSource must not be null
+2024-11-28 19:01:06,922 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2024-11-28 19:01:06,966 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2024-11-28 19:05:18,787 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 8968 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 19:05:18,791 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 19:05:19,495 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 19:05:19,714 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 19:05:20,561 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 19:05:20,775 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderJob' defined in class path resource [com/udemy/primeiroprojetospringbatch/job/JdbcCursorReaderJobConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderJob' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcCursorReaderStep' defined in class path resource [com/udemy/primeiroprojetospringbatch/step/JdbcCursorReaderStepConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.batch.core.Step]: Factory method 'jdbcCursorReaderStep' threw exception; nested exception is java.lang.IllegalArgumentException: DataSource must not be null
+2024-11-28 19:05:20,776 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2024-11-28 19:05:20,798 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2024-11-28 19:05:52,916 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 23992 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 19:05:52,919 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 19:05:53,482 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 19:05:53,739 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 19:05:54,829 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 19:05:55,033 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jdbcCursorReaderJob' defined in class path resource [com/udemy/primeiroprojetospringbatch/job/JdbcCursorReaderJobConfig.class]: Unsatisfied dependency expressed through method 'jdbcCursorReaderJob' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcCursorReaderStep' defined in class path resource [com/udemy/primeiroprojetospringbatch/step/JdbcCursorReaderStepConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.batch.core.Step]: Factory method 'jdbcCursorReaderStep' threw exception; nested exception is java.lang.IllegalArgumentException: DataSource must not be null
+2024-11-28 19:05:55,033 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2024-11-28 19:05:55,197 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2024-11-28 19:08:07,985 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 14012 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 19:08:07,989 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 19:08:08,668 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 19:08:09,001 WARN o.s.c.a.AnnotationConfigApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jdbcCursorReaderConfig' defined in file [C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes\com\udemy\primeiroprojetospringbatch\reader\JdbcCursorReaderConfig.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig$$EnhancerBySpringCGLIB$$d16a8be8]: Constructor threw exception; nested exception is java.lang.NullPointerException
+2024-11-28 19:17:22,191 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 22940 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 19:17:22,195 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 19:17:22,984 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 19:17:23,387 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 19:17:24,308 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 19:17:24,377 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2024-11-28 19:17:24,573 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-28 19:17:24,667 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Started PrimeiroJobSpringBatchApplication in 3.086 seconds (JVM running for 4.718)
+2024-11-28 19:17:24,798 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] launched with the following parameters: [{run.id=38}]
+2024-11-28 19:17:24,885 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcCursorReaderStep]
+2024-11-28 19:17:25,075 ERROR o.s.b.c.s.AbstractStep [main] Encountered an error executing step jdbcCursorReaderStep in job jdbcCursorReaderJob
+java.lang.IllegalArgumentException: Unable to invoke method: [public void com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes()] on object: [com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig@bd2f5a9] with arguments: [[StepExecution: id=197, version=1, name=jdbcCursorReaderStep, status=STARTED, exitStatus=EXECUTING, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=0, exitDescription=]]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:112) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.listener.MethodInvokerMethodInterceptor.invoke(MethodInvokerMethodInterceptor.java:69) ~[spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.sun.proxy.$Proxy69.beforeStep(Unknown Source) ~[?:?]
+	at org.springframework.batch.core.listener.CompositeStepExecutionListener.beforeStep(CompositeStepExecutionListener.java:79) ~[spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:204) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:410) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:136) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:319) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:147) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) [spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:127) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.sun.proxy.$Proxy63.run(Unknown Source) [?:?]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:192) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:166) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:153) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:148) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.udemy.primeiroprojetospringbatch.PrimeiroJobSpringBatchApplication.main(PrimeiroJobSpringBatchApplication.java:27) [classes/:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT *  FROM
+ CLIENTE]; nested exception is java.sql.SQLSyntaxErrorException: Table 'spring_batch.cliente' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:235) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:669) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:694) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:748) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:216) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:228) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes(JdbcCursorReaderConfig.java:52) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+Caused by: java.sql.SQLSyntaxErrorException: Table 'spring_batch.cliente' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-3.4.2.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-3.4.2.jar:?]
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:678) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:617) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:669) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:694) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:748) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:216) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:228) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes(JdbcCursorReaderConfig.java:52) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+2024-11-28 19:17:25,098 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcCursorReaderStep] executed in 211ms
+2024-11-28 19:17:25,124 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] completed with the following parameters: [{run.id=38}] and the following status: [FAILED] in 286ms
+2024-11-28 19:17:25,130 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-11-28 19:17:25,204 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2024-11-28 19:23:19,259 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 10212 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 19:23:19,263 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 19:23:20,129 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 19:23:20,559 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 19:23:21,537 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 19:23:21,620 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2024-11-28 19:23:21,784 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-28 19:23:21,859 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Started PrimeiroJobSpringBatchApplication in 3.432 seconds (JVM running for 5.275)
+2024-11-28 19:23:21,958 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2024-11-28 19:23:21,998 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2024-11-28 19:24:09,493 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 24188 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 19:24:09,497 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 19:24:10,187 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 19:24:10,641 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 19:24:11,635 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 19:24:11,696 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2024-11-28 19:24:11,888 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-28 19:24:11,966 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Started PrimeiroJobSpringBatchApplication in 3.092 seconds (JVM running for 5.211)
+2024-11-28 19:24:12,068 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2024-11-28 19:24:12,131 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2024-11-28 19:24:59,645 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 12092 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 19:24:59,656 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 19:25:00,360 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 19:25:00,746 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 19:25:01,693 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 19:25:01,762 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2024-11-28 19:25:01,983 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-28 19:25:02,062 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Started PrimeiroJobSpringBatchApplication in 3.349 seconds (JVM running for 5.325)
+2024-11-28 19:25:02,182 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] launched with the following parameters: [{run.id=39}]
+2024-11-28 19:25:02,243 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcCursorReaderStep]
+2024-11-28 19:25:02,326 ERROR o.s.b.c.s.AbstractStep [main] Encountered an error executing step jdbcCursorReaderStep in job jdbcCursorReaderJob
+java.lang.IllegalArgumentException: Unable to invoke method: [public void com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes()] on object: [com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig@77128dab] with arguments: [[StepExecution: id=198, version=1, name=jdbcCursorReaderStep, status=STARTED, exitStatus=EXECUTING, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=0, exitDescription=]]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:112) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.listener.MethodInvokerMethodInterceptor.invoke(MethodInvokerMethodInterceptor.java:69) ~[spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.sun.proxy.$Proxy69.beforeStep(Unknown Source) ~[?:?]
+	at org.springframework.batch.core.listener.CompositeStepExecutionListener.beforeStep(CompositeStepExecutionListener.java:79) ~[spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:204) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:148) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:410) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:136) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:319) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:147) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) [spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:127) [spring-batch-core-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) [spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.sun.proxy.$Proxy63.run(Unknown Source) [?:?]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.execute(JobLauncherCommandLineRunner.java:192) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.executeLocalJobs(JobLauncherCommandLineRunner.java:166) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.launchJobFromProperties(JobLauncherCommandLineRunner.java:153) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner.run(JobLauncherCommandLineRunner.java:148) [spring-boot-autoconfigure-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.udemy.primeiroprojetospringbatch.PrimeiroJobSpringBatchApplication.main(PrimeiroJobSpringBatchApplication.java:27) [classes/:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM CLIENTE]; nested exception is java.sql.SQLSyntaxErrorException: Table 'spring_batch.cliente' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:235) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:669) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:694) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:748) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:216) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:228) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes(JdbcCursorReaderConfig.java:52) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+Caused by: java.sql.SQLSyntaxErrorException: Table 'spring_batch.cliente' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-3.4.2.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-3.4.2.jar:?]
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:678) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:617) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:669) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:694) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:748) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:216) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:228) ~[spring-jdbc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.udemy.primeiroprojetospringbatch.reader.JdbcCursorReaderConfig.getClientes(JdbcCursorReaderConfig.java:52) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_301]
+	at org.springframework.batch.support.SimpleMethodInvoker.invokeMethod(SimpleMethodInvoker.java:108) ~[spring-batch-infrastructure-4.2.1.RELEASE.jar:4.2.1.RELEASE]
+	... 34 more
+2024-11-28 19:25:02,337 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcCursorReaderStep] executed in 94ms
+2024-11-28 19:25:02,358 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] completed with the following parameters: [{run.id=39}] and the following status: [FAILED] in 139ms
+2024-11-28 19:25:02,363 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-11-28 19:25:02,395 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2024-11-28 19:26:31,715 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Starting PrimeiroJobSpringBatchApplication on LBR-H16BHM3 with PID 11132 (C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch\target\classes started by raraujo in C:\Users\raraujo\dev\bfb-spring-batch-basico-avancado\PrimeiroJobSpringBatch)
+2024-11-28 19:26:31,720 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] No active profile set, falling back to default profiles: default
+2024-11-28 19:26:32,409 INFO o.s.c.a.ConfigurationClassEnhancer [main] @Bean method PropsConfig.config is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2024-11-28 19:26:32,805 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-11-28 19:26:33,749 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-11-28 19:26:33,793 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2024-11-28 19:26:34,030 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-28 19:26:34,103 INFO c.u.p.PrimeiroJobSpringBatchApplication [main] Started PrimeiroJobSpringBatchApplication in 3.098 seconds (JVM running for 4.761)
+2024-11-28 19:26:34,252 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] launched with the following parameters: [{run.id=40}]
+2024-11-28 19:26:34,328 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [jdbcCursorReaderStep]
+2024-11-28 19:26:34,429 INFO o.s.b.c.s.AbstractStep [main] Step: [jdbcCursorReaderStep] executed in 100ms
+2024-11-28 19:26:34,466 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=jdbcCursorReaderJob]] completed with the following parameters: [{run.id=40}] and the following status: [COMPLETED] in 159ms
+2024-11-28 19:26:34,474 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-11-28 19:26:34,525 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.

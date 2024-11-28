@@ -1,5 +1,6 @@
 package com.udemy.primeiroprojetospringbatch.dominio;
 
+
 public class Cliente {
 	
 	private String nome;

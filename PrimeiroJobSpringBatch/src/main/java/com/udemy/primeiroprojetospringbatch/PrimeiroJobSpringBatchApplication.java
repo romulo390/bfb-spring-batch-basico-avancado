@@ -14,8 +14,10 @@ public class PrimeiroJobSpringBatchApplication {
 		if(Objects.nonNull(args)) {
 			for (int i = 0; i < args.length; i++) {
 				if(args[i].trim().startsWith("job")) {
-					if (!args[i].equalsIgnoreCase("arquivoLarguraFixaJob")) {						
+					if (args[i].equalsIgnoreCase(Constants.JOB1_NAME)) {						
 						args[i] = Constants.JOB1_NAME;
+					}else if(args[i].equalsIgnoreCase("jdbcCursorReaderJob")) {
+						args[i] = "jdbcCursorReaderJob";
 					}
 				}
 				System.setProperty("spring.batch.job.names", args[i]);
